@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "djangotestcontainer"
+version = "0.1.0"
+description = ""
+authors = ["Julio Cezar Riffel <<julioriffel@gmail.com>>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+django = "^5.1.4"
+psycopg2-binary = "^2.9.10"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.4"
+pytest-django = "^4.9.0"
+testcontainers = {extras = ["postgresql"], version = "^4.9.0"}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
