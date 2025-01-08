@@ -9,12 +9,13 @@ readme = "README.md"
 python = "^3.12"
 django = "^5.1.4"
 psycopg2-binary = "^2.9.10"
+django-redis = "^5.4.0"
 
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.3.4"
 pytest-django = "^4.9.0"
-testcontainers = {extras = ["postgresql"], version = "^4.9.0"}
+testcontainers = { extras = ["postgresql", "redis"], version = "^4.9.0" }
 
 [build-system]
 requires = ["poetry-core"]
